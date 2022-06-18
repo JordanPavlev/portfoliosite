@@ -1,19 +1,27 @@
-import Logo from '../../assets/images/slogo.png'
+
 import { Link } from 'react-router-dom'
 import './style.scss'
+import React, { useEffect } from 'react'
 import { useState } from 'react'
 import AnimatedLetters from '../AnimatedLetters'
 
+
 const Home = () => {
     const [letterClass, setLetterClass] = useState('text-animate');
-    const nameArray = ['J', 'o','r','d','a','n'];
-    const jobArray = ['w','e','b','','d','e','v','e','l','o','p','e','r'];
+    const nameArray = [' ','J', 'o','r','d','a','n'];
+    const jobArray = ['w','e','b','-','d','e','v','e','l','o','p','e','r'];
+
+    useEffect(() => {
+        return setTimeout(() => {
+          setLetterClass('text-animate-hover')
+        }, 1000)
+      }, [])    
     return(
-            <div className='container'>
-             <div className='div-text'>
+            <div className='container home-page'>
+             <div className='text-zone'>
                 <h1>
                 <span className={letterClass}>H</span>
-                <span className={`${letterClass} _12`}>i,</span>
+                <span className={`${letterClass} _12`}>i, </span>
 
                 <br/> 
 
@@ -29,10 +37,12 @@ const Home = () => {
                  index={21}/></h1>
                 <h2>Frontend Developer/ Java Script Programmer / React enthusiast</h2>
                 <Link to="/contact" className='contact-btn'>CONTACT ME</Link>
+              </div>
+                
              </div>
-             </div>
-            
-    )
+        
+        
+             )
     
 }
 

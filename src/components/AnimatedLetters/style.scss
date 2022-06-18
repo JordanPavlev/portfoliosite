@@ -1,11 +1,22 @@
 .text-animate {
     display: inline-block;
-        
+    animation: baunceIn 1s 1s;
     min-width: 10px;
 }
+    .text-animate-hover {
+        
+        
+
+        &:hover {
+            color: #579ae6;
+            font-size: 60px;
+            font-weight: 800;
+        }
+    }
+
 
 @for $i from 1 through 35  {
     .text-animate_#{$i}{
-        
+        animation-delay: #{$i / 10}s;
     }
 }

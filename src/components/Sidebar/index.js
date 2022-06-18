@@ -1,6 +1,6 @@
 import './styles.scss'
 import {Link, NavLink} from 'react-router-dom'
-import LogoS from '../../assets/images/slogo.png'
+import LogoS from '../../assets/images/logoimg.png'
 import * as React from 'react'
 import { render } from 'react-dom'
 import LoSubtitle from '../../assets/images/logo_sub.png'

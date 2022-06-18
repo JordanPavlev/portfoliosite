@@ -1,0 +1,137 @@
+
+
+
+.container {
+    .text-zone {
+        font-size: 24px;
+        font-weight: 800;
+        font-family: 'Anek Odia';
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 52px;
+
+
+        h1 {
+            font-size: 65px;
+            font-family: 'Coolvetica';
+            margin-top: 10px;
+            
+            
+        }
+
+        p {
+            font-size: 21px;
+            color: #5e21a3;
+            font-weight: 520;
+            font-family: 'Coolvetica'; 
+            word-spacing: 4px;         
+            max-width: 380px;
+            &::before {
+                content: '<p>';
+                color: #2d9ad0;
+                font-size: 24px;
+            }
+            &::after {
+                content: '</p>';
+                color: #2d9ad0;
+                font-size: 24px;
+            }
+            &:hover {
+                color: pink;
+                font-size: 21px;
+            }
+            
+
+        }        
+    }
+
+    
+    }
+    
+
+
+
+    .stage-cube-cont {
+        width: 52%;
+        height: 100%;
+        top: 0;
+        padding-top: 14%;
+        margin-left: 0;
+        position: absolute;
+        right: 0;
+        overflow: hidden;
+      }
+      
+      .cubespinner {
+        animation-name: spincube;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        animation-duration: 12s;
+        transform-style: preserve-3d;
+        transform-origin: 100px 100px 0;
+        margin-left: calc(50% - 100px);
+      
+        div {
+          position: absolute;
+          width: 200px;
+          height: 200px;
+          border-radius: 1%;
+          border: 1px solid pink;
+          background: linear-gradient(-45deg, #f9f681, #e9baf5, #aec5e4);
+          opacity: 0.8;
+          text-align: center;
+          font-size: 100px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          box-shadow: 4px 4px 4px 4px #e9baf5;
+        }
+      
+        .face1 {
+          transform: translateZ(100px);
+          color: black;
+        }
+        .face2 {
+          transform: rotateY(90deg) translateZ(100px);
+          color: #f06529;
+        }
+        .face3 {
+          transform: rotateY(90deg) rotateX(90deg) translateZ(100px);
+          color: #28a4d9;
+        }
+        .face4 {
+          transform: rotateY(180deg) rotateZ(90deg) translateZ(100px);
+          color: #5ed4f4;
+        }
+        .face5 {
+          transform: rotateY(-90deg) rotateZ(90deg) translateZ(100px);
+          color: #efd81d;
+        }
+        .face6 {
+          transform: rotateX(-90deg) translateZ(100px);
+          color: #ec4d28;
+        }
+      }
+      
+      @keyframes spincube {
+        from,
+        to {
+          transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+        }
+        16% {
+          transform: rotateY(-90deg);
+        }
+        33% {
+          transform: rotateY(-90deg) rotateZ(90deg);
+        }
+        50% {
+          transform: rotateY(-180deg) rotateZ(90deg);
+        }
+        66% {
+          transform: rotateY(-270deg) rotateX(90deg);
+        }
+        83% {
+          transform: rotateX(90deg);
+        }
+      }

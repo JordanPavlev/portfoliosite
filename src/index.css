@@ -8,11 +8,23 @@ body {
   margin: 0;
   font-family: 300 11px/1.4 'Helvetica Neue', 'sans-serif';
   color: blue;
-  background: #d9b5e8;
+  background: linear-gradient(-45deg, #23a6d5, #8c31a3, #ee7752, #e73c7e);
+  background-size: 100%;
+	animation-name: gradient;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-delay: 2s;
+  animation-direction: normal;
+  animation-timing-function: ease-in;
+
+
+	height: 100vh;
   overflow: hidden;
   display: block;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+
 
 
