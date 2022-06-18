@@ -1,0 +1,11 @@
+.text-animate {
+    display: inline-block;
+        
+    min-width: 10px;
+}
+
+@for $i from 1 through 35  {
+    .text-animate_#{$i}{
+        
+    }
+}
