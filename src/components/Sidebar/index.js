@@ -13,16 +13,16 @@ const Sidebar = () => {
         <div className='navigation-bar'>
             <Link  className='logo' to='/'>
                 <img src={LogoS} alt="Big capital letter s"/>
-                <h4>    </h4>
+                
             </Link>
             <nav>
                 <NavLink exact="true" activeclassName="active" to="/">
-                    <FontAwesomeIcon icon={faHome} color="#5892ad"/>
+                    <FontAwesomeIcon icon={faHome} color="black"/>
                 </NavLink>
                 <NavLink exact="true" activeclassName="active" className="about-link" to="/about">
                     <FontAwesomeIcon icon={faUser} color="black"/>
                 </NavLink>
-                <NavLink exact="true" activeclassName="active" className="contact-link" to="/contact">
+                <NavLink exact="true" activeclassName="active" className="contact-link" to="/contacts">
                     <FontAwesomeIcon icon={faEnvelope} color="black"/>
                 </NavLink>
                     

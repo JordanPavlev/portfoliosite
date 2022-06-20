@@ -6,10 +6,14 @@
     top: 0;
     z-index: 3;
     min-height: 500px;
+
+   
   
     .logo {
       display: block;
       padding: 8px 0;
+
+      
   
       img {
         display: block;
@@ -34,7 +38,7 @@
     
         a {
             font-size: 28px;
-            color: #4d4d4e;
+            color: grey;
             display: block;
             
             line-height: 50px;

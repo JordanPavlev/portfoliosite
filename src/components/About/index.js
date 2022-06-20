@@ -17,9 +17,9 @@ const About = () => {
     const aboutArr = ['A','b','o','u','t',' ','m','e'];
 
     useEffect(() => {
-        return(
-        setLetterClass("text-animate-hover") )
-    }, [])
+      return(
+      setLetterClass("text-animate-hover") )
+  }, []) 
     return (
     
 

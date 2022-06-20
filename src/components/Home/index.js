@@ -12,10 +12,9 @@ const Home = () => {
     const jobArray = ['w','e','b','-','d','e','v','e','l','o','p','e','r'];
 
     useEffect(() => {
-        return setTimeout(() => {
-          setLetterClass('text-animate-hover')
-        }, 1000)
-      }, [])    
+      return(
+      setLetterClass("text-animate-hover") )
+  }, [])  
     return(
             <div className='container home-page'>
              <div className='text-zone'>
@@ -36,7 +35,7 @@ const Home = () => {
                  strArray={jobArray}
                  index={21}/></h1>
                 <h2>Frontend Developer/ Java Script Programmer / React enthusiast</h2>
-                <Link to="/contact" className='contact-btn'>CONTACT ME</Link>
+                <Link to="/contacts" className='contact-btn'>CONTACT ME</Link>
               </div>
                 
              </div>
